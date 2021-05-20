@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>_1808A.Training02.BLL</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\1808A.Training02.DAL\1808A.Training02.DAL.csproj" />
+    <ProjectReference Include="..\1808A.Training02.Model\1808A.Training02.Model.csproj" />
+  </ItemGroup>
+
+</Project>
