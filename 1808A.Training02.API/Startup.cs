@@ -34,6 +34,7 @@ namespace _1808A.Training02.API
             services.AddTransient<UserBLL>();
             services.AddTransient<PropertyBLL>();
             services.AddTransient<DistrictBLL>();
+            services.AddTransient<CommunityBLL>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "_1808A.Training02.API", Version = "v1" });
