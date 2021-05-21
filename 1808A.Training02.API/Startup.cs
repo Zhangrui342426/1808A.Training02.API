@@ -33,10 +33,14 @@ namespace _1808A.Training02.API
             services.AddTransient<AdministratorBLL>();
             services.AddTransient<UserBLL>();
             services.AddTransient<PropertyBLL>();
+            services.AddTransient<DistrictBLL>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "_1808A.Training02.API", Version = "v1" });
             });
+            services.AddCors(options =>
+            options.AddPolicy("Api", p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader())
+                );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
