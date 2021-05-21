@@ -12,15 +12,8 @@ namespace _1808A.Training02.DAL
 {
     public class DBHelper
     {
-        // static IConfiguration _configuration;
-        //public  DBHelper(IConfiguration configuration)
-        //{
-        //    _configuration = configuration;
-        //}
-        ////连接数据库
-        // static string Sqlconn { get { return _configuration.GetConnectionString("sqlconnstr"); } set { } }
-        // SqlConnection conn = new SqlConnection(Sqlconn);
-        static SqlConnection conn = new SqlConnection("server=.;database=Tenement;Integrated Security=True;");
+        public static string strConn = "server=.;database=Tenement;Integrated Security=True;";
+        SqlConnection conn = new SqlConnection(strConn);
         static SqlDataReader sdr;
         /// <summary>
         /// 获取数据流  查询、显示、绑定下拉

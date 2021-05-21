@@ -15,16 +15,10 @@ namespace _1808A.Training02.BLL
         {
             _helper = helper;
         }
-        /// <summary>
-        /// 管理员登录
-        /// </summary>
-        /// <param name="t"></param>
-        /// <returns></returns>
-        public List<Administrator> AdminLogin(Administrator t)
+        public List<Administrator> AdminLogin(Administrator a)
         {
-            string sql = $"select * from Administrator where Aname='{t.Aname}' and Apasswork='{t.Apasswork}'";
+            string sql = $"select * from Administrator where Aname='{a.Aname}' and Apasswork='{a.Apasswork}'";
             return _helper.GetList<Administrator>(sql);
-
         }
     }
 }

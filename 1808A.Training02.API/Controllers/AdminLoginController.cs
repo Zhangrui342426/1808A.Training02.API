@@ -23,7 +23,7 @@ namespace _1808A.Training02.API.Controllers
         /// <param name="a"></param>
         /// <returns></returns>
         [Route("AdminLogin"),HttpPost]
-        public IActionResult AdminLogin(Administrator a)
+        public IActionResult Admin(Administrator a)
         {
             int h = _bll.AdminLogin(a).Count();
             return Ok(new { data=h,msg=h>0?"登录成功":"用户名不存在或密码输入错误"});
